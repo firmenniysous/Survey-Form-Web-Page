@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Web Page</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1 id="title">Survey Web site: Feedback</h1>
+            <p id="description">Please, give us your thoughts about this Survey Web Page</p>
+        </header>
+
+        <main>
+            
+            <form action="/submit.url" id="survey-form">
+            <fieldset class="1">
+            <section class="main">
+                <h2>Let's get acquainted:</h2>
+                    <label for="name" id="name-label">Name<input type="text" id="name" placeholder="Your name here..." required></label> <br>
+                    <label for="email" id="email-label">Email<input type="email" id="email" placeholder="Your email here..." required></label> <br>
+                    <label for="number" id="number-label">Age <input type="number" id="number" min="12" max="99" placeholder="Your age here..."></label> <br>
+        
+                    <label for="dropdown">Choose Your Gender</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="" disabled selected>Choose your gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                        <option value="4">Prefer not to say</option>
+                    </select>
+                <br>
+            </section>
+        </fieldset>
+                
+        <fieldset class="2">
+            <section class="like-idea">
+                <h2 id="like-project">Do you like the style of the web page with the survey form?</h2>
+                    <input type="radio" name="idea" value="yes" id="yes" checked><label for="yes" id="label-yes">Yes</label> <br>
+                    <input type="radio" name="idea" value="no" id="no"><label for="no" id="label-no">No</label>
+            </section>
+        </fieldset>
+
+        <fieldset class="3">
+            <section class="grade">
+                <h2>How would you grade this survey project in a scale of 1 to 5?</h2>
+                    <select name="grade" id="grade">
+                        <option value="" disabled selected>Select from 1 to 5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+            </section>
+        </fieldset>
+        
+        <fieldset class="4"> 
+            <section class="checkbox">
+                <h2>What do you like about this survey form site?</h2>
+                    <input type="checkbox" name="like" value="convenience" id="convenience"><label for="convenience">Convenience</label> <br>
+                    <input type="checkbox" name="like" value="questions" id="questions"><label for="content">Questions</label> <br>
+                    <input type="checkbox" name="like" value="simplicity" id="simplicity"><label for="simplicity">Simplicity</label> <br>
+                    <input type="checkbox" name="like" value="style" id="style"><label for="style">Style</label> <br>
+                    <input type="checkbox" name="like" value="idea" id="idea"><label for="idea">Idea</label> <br>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <section class="suggestion">
+
+                <h2>Any suggestions or comments?</h2>
+                <label for="suggestion">Give additional thoughts about us:</label>
+                <textarea name="suggestion" id="suggestion" rows="10" cols="50" placeholder="Your comment here..."></textarea>    
+            </section>
+            <input type="submit" id="submit" value="Submit">
+        </fieldset>
+    </form>
+    </main>
+    </div>
+</body>
+</html>

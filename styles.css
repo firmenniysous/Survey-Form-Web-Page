@@ -1,0 +1,98 @@
+body {
+    
+    color: rgb(36, 9, 9);
+    font-size: 20px;
+    background: linear-gradient(rgba(255, 228, 196, 0.85), rgba(255, 228, 196, 0.85)), url(images/pexels-photo-301673.jpeg);
+    background-size: cover;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div {
+    max-width: 500px;
+    min-width: 300px;
+    width: 70vw;
+    margin: 1em auto;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.5rem;
+}
+
+input {
+    display: inline-block;
+    width: 98%;
+    height: 2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(134, 101, 53);
+}
+
+form {
+    text-align: left;
+}
+
+input::placeholder{
+    color: burlywood;
+}
+
+#dropdown {
+    display: block;
+    width: 200px;
+    height: 2rem;
+}
+
+input[type="radio"] {
+    display: inline;
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+#label-yes, #label-no {
+    vertical-align: 8.5px;
+}
+
+#grade {
+    width: 50%;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+label {
+      color: rgb(102, 27, 27);
+      vertical-align: 8px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+#suggestion {
+    margin-top: 5px;
+}
+
+select {
+    background-color: burlywood;   
+}
+
+
+
+fieldset {
+    border-color:brown;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+#submit {
+    background-color: burlywood;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 20px;
+    height: 40px;
+}
